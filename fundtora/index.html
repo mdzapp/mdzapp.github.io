@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundtora - The Ultimate Financial Super App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563EB',
+                        primaryDark: '#1D4ED8',
+                        accent: '#7C3AED',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-wallet text-primary text-2xl"></i>
+                    <span class="text-xl font-black tracking-tight text-slate-900">FUNDTORA</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-slate-600 hover:text-primary font-medium transition">Features</a>
+                    <a href="#ai" class="text-slate-600 hover:text-primary font-medium transition">AI Advisor</a>
+                    <a href="#security" class="text-slate-600 hover:text-primary font-medium transition">Security</a>
+                    <a href="#" class="bg-primary text-white px-5 py-2 rounded-full font-bold hover:bg-primaryDark transition shadow-lg shadow-primary/20">Download App</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden pt-16 pb-24 lg:pt-32 lg:pb-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div>
+                    <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-bold mb-6">ALL-IN-ONE ECOSYSTEM</span>
+                    <h1 class="text-5xl lg:text-7xl font-black text-slate-900 leading-[1.1] mb-8">
+                        Master Your Money, <br>
+                        <span class="text-primary">Supercharged by AI.</span>
+                    </h1>
+                    <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-xl">
+                        The only app you need to manage your money, vehicles, and investments. Get smart insights and take control of your financial future today.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://play.google.com/store/apps/details?id=com.mdz.fundtora" class="flex items-center justify-center gap-3 bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition shadow-xl">
+                            <i class="fab fa-google-play text-2xl"></i>
+                            <div class="text-left">
+                                <div class="text-[10px] uppercase opacity-70 leading-none">Get it on</div>
+                                <div class="text-lg leading-none">Google Play</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-16 lg:mt-0 flex justify-center lg:justify-end">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute -top-10 -left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl"></div>
+                        <div class="absolute -bottom-10 -right-10 w-72 h-72 bg-accent/20 rounded-full blur-3xl"></div>
+                        <div class="bg-white p-4 rounded-[3rem] shadow-2xl border border-slate-100 relative z-10">
+                             <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="App Preview" class="rounded-[2.5rem] w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-black text-slate-900 mb-4">Powerful Features for Your Wealth</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">From daily tracking to long-term investment planning, Fundtora covers every aspect of your financial life.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-primary/30 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition">
+                        <i class="fas fa-chart-pie text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Expense & Budget</h3>
+                    <p class="text-slate-600 leading-relaxed">Track every penny automatically. Set budgets for categories and get alerts before you overspend.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-primary/30 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-2xl bg-orange-500/10 text-orange-500 flex items-center justify-center mb-6 group-hover:bg-orange-500 group-hover:text-white transition">
+                        <i class="fas fa-car text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Vehicle Management</h3>
+                    <p class="text-slate-600 leading-relaxed">Log fuel, services, and mileage. Calculate efficiency and get maintenance reminders for all your vehicles.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-primary/30 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-2xl bg-green-500/10 text-green-500 flex items-center justify-center mb-6 group-hover:bg-green-500 group-hover:text-white transition">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Investment Portfolio</h3>
+                    <p class="text-slate-600 leading-relaxed">Monitor your Stocks, Crypto, Gold, and Mutual Funds in one place. Real-time value updates and ROI analysis.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-primary/30 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 text-purple-500 flex items-center justify-center mb-6 group-hover:bg-purple-500 group-hover:text-white transition">
+                        <i class="fas fa-hand-holding-dollar text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Loans & Debts</h3>
+                    <p class="text-slate-600 leading-relaxed">Never miss a payment. Manage what you owe and what people owe you with automated repayment schedules.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-primary/30 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-500/10 text-blue-500 flex items-center justify-center mb-6 group-hover:bg-blue-500 group-hover:text-white transition">
+                        <i class="fas fa-bullseye text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Financial Goals</h3>
+                    <p class="text-slate-600 leading-relaxed">Plan for the big things. Set savings goals, track progress, and reach your dreams faster with focused saving.</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-primary/30 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-2xl bg-red-500/10 text-red-500 flex items-center justify-center mb-6 group-hover:bg-red-500 group-hover:text-white transition">
+                        <i class="fas fa-file-invoice-dollar text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Subscriptions & Bills</h3>
+                    <p class="text-slate-600 leading-relaxed">Audit your recurring expenses. See your upcoming bills and get smart tips on where to save.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Advisor Highlight -->
+    <section id="ai" class="py-24 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="bg-white/10 backdrop-blur-md p-8 rounded-[2.5rem] border border-white/20">
+                        <div class="flex gap-4 mb-6">
+                            <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
+                                <i class="fas fa-robot text-primary"></i>
+                            </div>
+                            <div class="bg-white/20 px-4 py-2 rounded-2xl text-sm italic">
+                                "Based on your spending, you can save $200 extra this month by reducing 'Dining Out' expenses..."
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="h-4 bg-white/20 rounded-full w-full"></div>
+                            <div class="h-4 bg-white/20 rounded-full w-3/4"></div>
+                            <div class="h-4 bg-white/20 rounded-full w-1/2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 mb-12 lg:mb-0">
+                    <h2 class="text-4xl lg:text-5xl font-black mb-8">Meet Your AI Financial Advisor</h2>
+                    <p class="text-xl text-white/80 leading-relaxed mb-10">
+                        Powered by Google Gemini Pro, our AI analyzes your spending patterns, vehicle costs, and investment performance to give you personalized, actionable advice.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-accent text-xl"></i>
+                            <span class="font-semibold text-lg">Financial Health Score auditing</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-accent text-xl"></i>
+                            <span class="font-semibold text-lg">Predictive cash flow analysis</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-accent text-xl"></i>
+                            <span class="font-semibold text-lg">Personalized investment rebalancing tips</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-slate-900 mb-4">Security as a Priority</h2>
+                <p class="text-lg text-slate-600">Your data is yours. We ensure it stays that way.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12 text-center">
+                <div>
+                    <div class="text-4xl text-primary mb-4"><i class="fas fa-shield-halved"></i></div>
+                    <h4 class="text-xl font-bold mb-2">AES-256 Encryption</h4>
+                    <p class="text-slate-600">Bank-grade encryption for all your financial data on device and in transit.</p>
+                </div>
+                <div>
+                    <div class="text-4xl text-primary mb-4"><i class="fas fa-fingerprint"></i></div>
+                    <h4 class="text-xl font-bold mb-2">Biometric Lock</h4>
+                    <p class="text-slate-600">Access your dashboard with FaceID or Fingerprint for seamless security.</p>
+                </div>
+                <div>
+                    <div class="text-4xl text-primary mb-4"><i class="fas fa-cloud-check"></i></div>
+                    <h4 class="text-xl font-bold mb-2">Private Cloud Sync</h4>
+                    <p class="text-slate-600">Securely backup to your own Google Drive using hidden app data storage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <i class="fas fa-wallet text-primary text-2xl"></i>
+                        <span class="text-2xl font-black tracking-tight">FUNDTORA</span>
+                    </div>
+                    <p class="text-slate-400 max-w-sm mb-8">
+                        Revolutionizing the way you manage your entire financial life. One app, infinite possibilities.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Explore</h5>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="#features" class="hover:text-white transition">Features</a></li>
+                        <li><a href="#ai" class="hover:text-white transition">AI Advisor</a></li>
+                        <li><a href="#security" class="hover:text-white transition">Security</a></li>
+                        <li><a href="#" class="hover:text-white transition">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Legal</h5>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="privacy_policy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="terms_of_service.html" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-slate-500 text-sm">
+                <p>&copy; 2026 Fundtora Ecosystem. All rights reserved. Built for Financial Freedom.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
