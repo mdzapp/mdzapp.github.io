@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quranur - Read, Listen, and Master the Quran</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        quranPrimary: '#0A3A30', // Deep forest green/teal
+                        quranPrimaryDark: '#05221C', // Extra deep teal
+                        quranAccent: '#D4AF37', // Gold/Amber accent
+                        quranLight: '#F3F7F5', // Soft green-gray background
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .arabic-text { font-family: 'Amiri', serif; }
+        .gradient-quran { background: linear-gradient(135deg, #0A3A30 0%, #05221C 100%); }
+    </style>
+</head>
+<body class="bg-[#FAFDFB] text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-emerald-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-quranPrimary rounded-xl flex items-center justify-center shadow-lg shadow-quranPrimary/20">
+                        <i class="fas fa-book-open text-quranAccent text-lg"></i>
+                    </div>
+                    <span class="text-2xl font-black tracking-tighter text-quranPrimary">QURANUR</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-slate-600 hover:text-quranPrimary font-semibold transition">Features</a>
+                    <a href="#ai-tajweed" class="text-slate-600 hover:text-quranPrimary font-semibold transition">AI Tajweed</a>
+                    <a href="#privacy" class="text-slate-600 hover:text-quranPrimary font-semibold transition">Privacy</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.mdz.quranur" class="bg-quranPrimary text-white px-6 py-2.5 rounded-full font-bold hover:bg-quranPrimaryDark transition shadow-lg shadow-quranPrimary/10">Download App</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden pt-12 pb-20 lg:pt-28 lg:pb-32 bg-gradient-to-b from-[#F2FAF6] to-[#FAFDFB]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="text-center lg:text-left">
+                    <span class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-emerald-100/50 text-quranPrimary text-sm font-bold mb-6">
+                        <i class="fas fa-star text-quranAccent animate-pulse"></i> AD-FREE & PREMIUM EXPERIENCE
+                    </span>
+                    <h1 class="text-5xl lg:text-7xl font-black text-quranPrimaryDark leading-[1.05] mb-8 tracking-tight">
+                        Read, Listen, <br>
+                        <span class="text-emerald-600">Master the Quran.</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                        Experience the Holy Quran with a pristine, ad-free Mushaf reading interface, high-quality audio recitation (murottal), and an advanced AI-powered Tajweed pronunciation helper.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                        <a href="https://play.google.com/store/apps/details?id=com.mdz.quranur" class="flex items-center justify-center gap-3 bg-quranPrimary text-white px-8 py-4 rounded-2xl font-bold hover:bg-quranPrimaryDark transition shadow-xl shadow-quranPrimary/20 hover:scale-105 transition-all font-semibold">
+                            <i class="fab fa-google-play text-2xl text-quranAccent"></i>
+                            <div class="text-left">
+                                <div class="text-[10px] uppercase opacity-75 leading-none">Get it on</div>
+                                <div class="text-lg leading-none font-extrabold">Google Play</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-16 lg:mt-0 flex justify-center lg:justify-end">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute -top-12 -left-12 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl"></div>
+                        <div class="absolute -bottom-12 -right-12 w-80 h-80 bg-quranAccent/10 rounded-full blur-3xl"></div>
+                        <div class="bg-white p-5 rounded-[3rem] shadow-2xl border border-emerald-50 relative z-10 hover:rotate-2 transition-transform duration-500">
+                             <img src="https://images.unsplash.com/photo-1609599006353-e629eaabfeae?w=800&fit=crop" alt="Quranur App Preview" class="rounded-[2.5rem] w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-black text-quranPrimaryDark mb-4">Crafted for Spiritual Growth</h2>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">Quranur offers a suite of modern tools that help you connect with, understand, and recite the Quran more beautifully.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1: Mushaf Reading -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-emerald-600/20 hover:bg-white hover:shadow-2xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition duration-300">
+                        <i class="fas fa-book-open text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-quranPrimaryDark mb-4">Premium Mushaf Reading</h3>
+                    <p class="text-slate-500 leading-relaxed">Choose from multiple beautiful Mushaf layouts, including Indopak and Uthmani scripts. Fully optimized for a distraction-free experience.</p>
+                </div>
+                <!-- Feature 2: Audio Recitation -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-emerald-600/20 hover:bg-white hover:shadow-2xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center mb-6 group-hover:bg-quranAccent group-hover:text-white transition duration-300">
+                        <i class="fas fa-volume-high text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-quranPrimaryDark mb-4">High-Fidelity Murottal</h3>
+                    <p class="text-slate-500 leading-relaxed">Stream or download translations and beautiful audio recitations from world-renowned Qaris. Includes looping and speed control.</p>
+                </div>
+                <!-- Feature 3: AI Tajweed Assistant -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-emerald-600/20 hover:bg-white hover:shadow-2xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 text-teal-600 flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition duration-300">
+                        <i class="fas fa-microphone text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-quranPrimaryDark mb-4">AI Pronunciation Correction</h3>
+                    <p class="text-slate-500 leading-relaxed">Our advanced artificial intelligence listens to your voice as you read and highlights pronunciation and Tajweed errors to guide your learning.</p>
+                </div>
+                <!-- Feature 4: Translation & Tafsir -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-emerald-600/20 hover:bg-white hover:shadow-2xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-500/10 text-blue-500 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
+                        <i class="fas fa-language text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-quranPrimaryDark mb-4">Word-by-Word Tafsir</h3>
+                    <p class="text-slate-500 leading-relaxed">Understand the deep meaning of every surah with multi-language translations, word-by-word analysis, and standard tafsir references.</p>
+                </div>
+                <!-- Feature 5: Smart Bookmarks & Notes -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-emerald-600/20 hover:bg-white hover:shadow-2xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 text-purple-500 flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition duration-300">
+                        <i class="fas fa-bookmark text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-quranPrimaryDark mb-4">Smart Bookmarks & Sync</h3>
+                    <p class="text-slate-500 leading-relaxed">Keep track of your memorization and reading goals. Save custom notes on verses and securely sync data with private cloud backup.</p>
+                </div>
+                <!-- Feature 6: Prayer Times & Qibla -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-emerald-600/20 hover:bg-white hover:shadow-2xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-rose-500/10 text-rose-500 flex items-center justify-center mb-6 group-hover:bg-rose-600 group-hover:text-white transition duration-300">
+                        <i class="fas fa-compass text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-quranPrimaryDark mb-4">Prayer Times & Qibla</h3>
+                    <p class="text-slate-500 leading-relaxed">Accurate, offline-capable prayer times tailored to your exact coordinates, alongside a responsive, visual Qibla compass.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Tajweed Highlight -->
+    <section id="ai-tajweed" class="py-24 gradient-quran text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="bg-white/10 backdrop-blur-md p-8 rounded-[2.5rem] border border-white/15">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 rounded-full bg-quranAccent flex items-center justify-center">
+                                <i class="fas fa-microphone text-quranPrimary text-lg"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs uppercase tracking-widest text-quranAccent font-bold">AI Analysis Result</span>
+                                <p class="text-sm font-semibold">Surah Al-Fatihah, Verse 4</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-quranPrimaryDark/40 p-6 rounded-2xl mb-6 text-center">
+                            <span class="arabic-text text-3xl block leading-loose tracking-wide text-quranAccent">مَٰلِكِ يَوْمِ ٱلدِّينِ</span>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+                                <p class="text-sm">Pronunciation: <strong class="text-emerald-400">Perfect (98% match)</strong></p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                                <p class="text-sm">Madd Length: <strong class="text-amber-400">Hold 2 beats on "Maa" (Hold slightly longer)</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 mb-12 lg:mb-0">
+                    <h2 class="text-4xl lg:text-5xl font-black mb-8 leading-tight">Perfect Your Recitation With Advanced AI</h2>
+                    <p class="text-lg text-emerald-100/80 leading-relaxed mb-8">
+                        Quranur embeds an audio processing engine that listens to your voice as you read and compares your pronunciation against acoustic models of world-class Qaris. 
+                    </p>
+                    <ul class="space-y-4 font-medium text-slate-100">
+                        <li class="flex items-center gap-4">
+                            <div class="w-6 h-6 bg-quranAccent/20 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-quranAccent text-xs"></i>
+                            </div>
+                            <span>Real-time feedback on pronunciation accuracy</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-6 h-6 bg-quranAccent/20 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-quranAccent text-xs"></i>
+                            </div>
+                            <span>Tajweed rule tracking (Madd, Ghunnah, Qalqalah)</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-6 h-6 bg-quranAccent/20 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-quranAccent text-xs"></i>
+                            </div>
+                            <span>Personalized lessons based on your reading errors</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy as Priority Section -->
+    <section id="privacy" class="py-24 bg-slate-50 border-t border-b border-emerald-50/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-quranPrimaryDark mb-4">Zero Ads. Full Privacy.</h2>
+                <p class="text-lg text-slate-500 max-w-xl mx-auto">We believe the Quran is a sacred text that should be free of visual clutter, ads, and tracking.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12 text-center">
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+                    <div class="text-4xl text-quranPrimary mb-4"><i class="fas fa-ban"></i></div>
+                    <h4 class="text-xl font-bold text-quranPrimaryDark mb-2">100% Ad-Free</h4>
+                    <p class="text-slate-500 text-sm">No annoying popups, video ads, or banners. Your reading flow remains pure and distraction-free.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+                    <div class="text-4xl text-quranPrimary mb-4"><i class="fas fa-user-shield"></i></div>
+                    <h4 class="text-xl font-bold text-quranPrimaryDark mb-2">No Data Harvesting</h4>
+                    <p class="text-slate-500 text-sm">We don't collect, sell, or profile your personal reading logs, voice files, or locations.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+                    <div class="text-4xl text-quranPrimary mb-4"><i class="fas fa-cloud-slash"></i></div>
+                    <h4 class="text-xl font-bold text-quranPrimaryDark mb-2">Offline Capability</h4>
+                    <p class="text-slate-500 text-sm">Quran text, translations, and downloaded murottal work completely offline without an active network connection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-[#FAFDFB] border-t border-emerald-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-quranPrimary rounded-lg flex items-center justify-center">
+                        <i class="fas fa-book-open text-quranAccent text-sm"></i>
+                    </div>
+                    <span class="text-xl font-black tracking-tighter text-quranPrimary">QURANUR</span>
+                </div>
+                <div class="flex flex-wrap gap-8 text-sm font-semibold text-slate-500">
+                    <a href="privacy_policy.html" class="hover:text-quranPrimary transition">Privacy Policy</a>
+                    <a href="terms_of_service.html" class="hover:text-quranPrimary transition">Terms of Service</a>
+                </div>
+            </div>
+            <div class="mt-12 text-center text-xs font-bold text-slate-300 tracking-[0.2em] uppercase">
+                &copy; 2026 QURANUR. ALL RIGHTS RESERVED. POWERED BY MDZ STUDIO.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Quranur Ecosystem</title>
+    <style>
+        body { font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: #2c3e50; max-width: 850px; margin: 0 auto; padding: 40px 20px; background-color: #f4f8f6; }
+        .container { background-color: #fff; padding: 50px; border-radius: 24px; box-shadow: 0 15px 35px rgba(10,58,48,0.05); border: 1px solid #e1eee8; }
+        h1 { color: #0A3A30; border-bottom: 2px solid #edf2f7; padding-bottom: 20px; margin-top: 0; font-size: 2.2em; }
+        h2 { color: #1a202c; margin-top: 35px; border-left: 5px solid #0A3A30; padding-left: 20px; font-size: 1.4em; }
+        p, li { margin-bottom: 18px; font-size: 15px; color: #4a5568; }
+        ul { padding-left: 25px; }
+        strong { color: #2d3748; }
+        .highlight { color: #0A3A30; font-weight: bold; }
+        .footer { margin-top: 60px; text-align: center; font-size: 0.85em; color: #a0aec0; border-top: 1px solid #edf2f7; padding-top: 30px; }
+        .version { font-size: 0.9em; color: #718096; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="version"><strong>Last updated:</strong> July 18, 2026 | <strong>Version:</strong> 1.0 (Initial Launch)</p>
+
+        <p>At <span class="highlight">Quranur</span>, we are committed to providing a sacred, focused, and secure environment for reading and reciting the Holy Quran. We operate under a strict "Privacy by Design" philosophy. This document outlines how your data is handled across our reading, audio player, AI Tajweed helper, and sync features.</p>
+
+        <h2>1. Data Collection Categories</h2>
+        <p>To provide a focused Islamic reading and learning experience, we collect and process:</p>
+        <ul>
+            <li><strong>Identity & Account Data:</strong> Name and email address retrieved via Google Sign-In or email registration (only if you choose to create an account for cloud backup).</li>
+            <li><strong>Personalization & Settings:</strong> Font sizes, script styles (Indopak/Uthmani), theme states, translation languages, and selected reciters. This data is stored entirely on your local device.</li>
+            <li><strong>Reading Progress & Bookmarks:</strong> Your current reading position, custom bookmarks, highlights, and verses saved to lists.</li>
+            <li><strong>Audio Tajweed Voice Inputs:</strong> To offer the AI Pronunciation Correction features, the app requests microphone permissions. Audio recordings are processed **strictly on your device in real-time** to evaluate pronunciation and are **never uploaded, stored, or shared** with external servers.</li>
+            <li><strong>Prayer Times Location Data:</strong> Precise GPS coordinates are requested to calculate accurate prayer times and Qibla direction. This coordinate calculation is performed locally on the device; location data is never sent to our servers.</li>
+            <li><strong>Cloud Backup Data:</strong> Optional cloud synchronization utilizing the secure <code>drive.appdata</code> scope. Quranur can only access its own private, hidden application folder and cannot view or modify any other files in your personal Google Drive.</li>
+        </ul>
+
+        <h2>2. Data Security & Encryption</h2>
+        <p>We implement advanced security protocols to keep your information safe:</p>
+        <ul>
+            <li><strong>Local-First Storage:</strong> Your primary app state is stored in a secure SQLite database on your device, encrypted with AES-256.</li>
+            <li><strong>Google Drive Private Sync:</strong> Secure, isolated cloud backup using Google Drive's private app data folder, preventing unauthorized file access.</li>
+            <li><strong>No Ads or Trackers:</strong> Quranur is completely ad-free and contains no advertising trackers or profiling SDKs.</li>
+        </ul>
+
+        <h2>3. Third-Party Partners</h2>
+        <p>We only work with trusted service providers to support fundamental infrastructure:</p>
+        <ul>
+            <li><strong>Google (Firebase & Drive API):</strong> For crash analytics, performance monitoring, and secure cloud synchronization.</li>
+            <li><strong>RevenueCat:</strong> For secure processing of Premium subscriptions and donation validation (if applicable).</li>
+        </ul>
+
+        <h2>4. Your Data Rights</h2>
+        <p>Quranur grants you complete ownership of your personal data:</p>
+        <ul>
+            <li><strong>Data Export:</strong> Export your bookmarks, notes, and reading plans in structured JSON or CSV format.</li>
+            <li><strong>Full Deletion:</strong> Permanently delete your account and all associated cloud backups from our databases via the app settings.</li>
+        </ul>
+
+        <h2>5. Contact Us</h2>
+        <p>If you have any questions regarding this policy or our data practices, please contact us via support or at <strong>privacy@quranur.com</strong>.</p>
+    </div>
+    <div class="footer">
+        &copy; 2026 Quranur Ecosystem. All rights reserved.<br>
+        Developed by MDZ Studio. Built for Devotion, Secured with Integrity.
+    </div>
+</body>
+</html>
